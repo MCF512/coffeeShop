@@ -31,6 +31,7 @@
     "gulp-pug": "^5.0.0",
     "jquery": "^3.6.1",
     "pug": "^3.0.2",
-    "rateyo": "^2.3.2"
+    "rateyo": "^2.3.2",
+    "slick-carousel": "^1.8.1"
   }
 }

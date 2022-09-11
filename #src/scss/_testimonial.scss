@@ -1,0 +1,62 @@
+.testimonial {
+
+  // &__slider {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  &__slide {
+    padding: 40px;
+    background-color: #1C1814;
+    // max-width: 565px;
+  }
+
+  .slick-slide {
+    margin: 0 20px;
+  }
+
+  .slick-list {
+    margin: 0 -20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  img {
+    max-width: 130px;
+  }
+
+  &__text {
+    max-width: 330px;
+    font-family: 'Urbanist';
+    font-weight: 500;
+    line-height: 1.8;
+    opacity: 0.8;
+  }
+
+  &__name {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__job {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.5;
+    padding-top: 2px;
+  }
+}

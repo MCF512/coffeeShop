@@ -42,6 +42,111 @@
   overflow: hidden;
 }
 
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 body {
   color: #fff;
   background: #000;
@@ -547,6 +652,10 @@ button {
   stroke-width: 40px;
 }
 
+.menu {
+  padding-bottom: 140px;
+}
+
 .menu__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -583,6 +692,70 @@ button {
 .menu img {
   max-width: 72px;
   margin-right: 20px;
+}
+
+.testimonial__slide {
+  padding: 40px;
+  background-color: #1C1814;
+}
+
+.testimonial .slick-slide {
+  margin: 0 20px;
+}
+
+.testimonial .slick-list {
+  margin: 0 -20px;
+}
+
+.testimonial__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.testimonial img {
+  max-width: 130px;
+}
+
+.testimonial__text {
+  max-width: 330px;
+  font-family: "Urbanist";
+  font-weight: 500;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.testimonial__name {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.testimonial__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonial__job {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.5;
+  padding-top: 2px;
 }
 
 @media (max-width: 992px) {

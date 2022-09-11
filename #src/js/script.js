@@ -18,4 +18,18 @@ $(function () {
     rating: 3.4
   });
 
+  $(".testimonial__star").rateYo({
+    starWidth: "20px",
+    normalFill: "#121315",
+    ratedFill: "#FAA61A",
+    readOnly: true,
+    rating: 5
+  });
+
+  $(".testimonial__slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: true
+  })
+
 });
