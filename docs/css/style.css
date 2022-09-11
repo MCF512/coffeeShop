@@ -231,6 +231,93 @@ button {
           transform: translate(-50%, -50%);
 }
 
+.about {
+  padding-top: 146px;
+  padding-bottom: 140px;
+}
+
+.about__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.about__title {
+  font-family: "Righteous", cursive;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.about__title--bottom {
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #C99E71;
+}
+
+.about__title span {
+  color: #C99E71;
+  margin-right: 12px;
+}
+
+.about__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__text {
+  max-width: 398px;
+}
+
+.about__card--history {
+  padding: 120px 56px;
+  background-color: #1C1814;
+}
+
+.about__card--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__subtitle {
+  font-family: "Righteous";
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 36px;
+  max-width: 398px;
+}
+
+.about__text {
+  font-family: "Urbanist";
+  font-weight: 500;
+  line-height: 1.8;
+}
+
 @media (max-width: 992px) {
   .header__nav {
     font-size: 16px;
