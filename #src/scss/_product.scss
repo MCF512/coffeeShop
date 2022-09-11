@@ -1,0 +1,141 @@
+.product {
+
+  &__title {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #C99E71;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-family: 'Righteous';
+    font-size: 48px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 56px;
+
+    &--machine {
+      margin-bottom: 36px;
+      // max-width: 500px;
+      text-align: left;
+      padding-right: 40px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  &__card {
+    padding: 48px 48px 40px 48px;
+    background-color: #121315;
+    max-width: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__type {
+    text-transform: uppercase;
+    font-family: 'Urbanist';
+    font-weight: 500;
+    line-height: 1.2;
+    color: #C99E71;
+    padding-top: 3px;
+    margin-right: 13px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-family: 'Righteous';
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    span {
+      font-family: 'Inter';
+      font-weight: 400;
+      color: #C99E71;
+    }
+  }
+
+  &__add {
+    padding: 13px 20px 13px 56px;
+    background-color: #C99E71;
+    font-family: 'Urbanist';
+    font-size: 18px;
+    line-height: 1.2;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url(../img/add_bag.svg);
+      left: 20px;
+      top: 10px;
+
+    }
+  }
+
+  &__more {
+    display: block;
+    padding: 20px 36px;
+    text-transform: uppercase;
+    background-color: #C99E71;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 140px;
+
+    &--machine {
+      margin: 0;
+    }
+  }
+
+  &__machine {
+    padding: 85px 89px 86px 169px;
+    background-color: #1C1814;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 36px;
+    max-width: 530px;
+  }
+
+  .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+    stroke: #C99E71;
+    stroke-width: 40px;
+  }
+
+}

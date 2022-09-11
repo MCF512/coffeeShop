@@ -42,6 +42,7 @@ let { src, dest } = require('gulp'),
   uglify = require('gulp-uglify-es').default,
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2'),
+  concat = require('gulp-concat'),
   // imagemin = require('gulp-imagemin'),
   pug = require('gulp-pug'),
   fonter = require('gulp-fonter');
@@ -74,6 +75,7 @@ function pugHtml() {
 
 function css() {
   return src(path.src.css)
+    // .pipe(concat('style.css'))
     .pipe(
       scss({
         outputStyle: "expanded"
@@ -94,7 +96,11 @@ function css() {
 }
 
 function js() {
-  return src(path.src.js)
+  return src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/rateyo/min/jquery.rateyo.min.js',
+    path.src.js])
+    .pipe(concat('script.js'))
     .pipe(fileinclude())
     .pipe(dest(path.build.js))
     .pipe(
