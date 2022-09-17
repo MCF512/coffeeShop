@@ -897,6 +897,102 @@ button {
   top: -1px;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 41px;
+}
+
+.footer__form {
+  position: relative;
+}
+
+.footer input[type=email] {
+  padding: 22px 28px;
+  font-family: "Urbanist";
+  font-weight: 500;
+  line-height: 1.8;
+  background-color: #1C1814;
+  border-radius: 36px;
+  color: #fff;
+  outline: transparent;
+}
+
+.footer input[type=email]::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+
+.footer input[type=email]::-moz-placeholder {
+  opacity: 0.8;
+}
+
+.footer input[type=email]:-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.footer input[type=email]::-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.footer input[type=email]::placeholder {
+  opacity: 0.8;
+}
+
+.footer input[type=submit] {
+  position: absolute;
+  content: "";
+  background-image: url(../img/submit_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #C99E71;
+  -webkit-box-shadow: 0px 22px 44px;
+          box-shadow: 0px 22px 44px;
+  top: 12px;
+  right: 12px;
+}
+
+.footer__copy {
+  background-color: #1C1814;
+  padding: 33px 0 33px 0;
+  text-align: center;
+}
+
+.footer__text {
+  font-family: "Urbanist";
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
 @media (max-width: 992px) {
   .header__nav {
     font-size: 16px;

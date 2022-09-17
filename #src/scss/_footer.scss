@@ -1,0 +1,74 @@
+.footer {
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  // &__email {
+  input[type=email] {
+    padding: 22px 28px;
+    font-family: "Urbanist";
+    font-weight: 500;
+    line-height: 1.8;
+    background-color: #1C1814;
+    border-radius: 36px;
+    color: #fff;
+    outline: transparent;
+
+    &::placeholder {
+      opacity: 0.8;
+    }
+  }
+
+  input[type=submit] {
+    position: absolute;
+    // content: url(../img/submit_arrow.svg);
+    content: '';
+    background-image: url(../img/submit_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #C99E71;
+    box-shadow: 0px 22px 44px;
+    top: 12px;
+    right: 12px;
+  }
+
+  &__copy {
+    background-color: #1C1814;
+    padding: 33px 0 33px 0;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: "Urbanist";
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+
+}
