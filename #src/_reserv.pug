@@ -1,0 +1,14 @@
+section.reserv 
+  .container 
+    .reserv__wrapper 
+      .reserv__map 
+        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A264844a1c4a493d395b22d6fae7843a8aba166affca52e2645fd853700e737df&amp;width=585&amp;height=652&amp;lang=ru_RU&amp;scroll=true") 
+      .reserv__booking 
+        h2.title.reserv__title Reservation 
+        h2.subtitle.reserv__subtitle Booking a table 
+        form.reserv__form(action="")
+          input(type="text", name="who" placeholder="4 person")
+          input(type="text" name="date" placeholder=" 12 /12/ 12")
+          input(type="text" name="time" placeholder="12 AM")
+          button.reserv__submit Book a table 
+

@@ -1,0 +1,51 @@
+.reserv {
+  padding-bottom: 140px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 16px 20px;
+      border: transparent;
+      background-color: #14110E;
+      font-family: 'Urbanist';
+      font-weight: 600;
+      outline: transparent;
+      color: #fff;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      &:last-child {
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  &__submit {
+    padding: 20px 36px;
+    font-family: 'Inter';
+    width: fit-content;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #C99E71;
+    margin: 0 auto;
+  }
+
+  &__booking {
+    padding: 72px 48px;
+    background-color: #1C1814;
+    max-width: 585px;
+    width: 100%;
+
+  }
+}
