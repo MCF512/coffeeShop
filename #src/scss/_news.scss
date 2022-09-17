@@ -1,0 +1,60 @@
+.news {
+  padding-bottom: 140px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    padding: 20px 24px 24px 24px;
+    background-color: #1C1814;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__author {
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 1.2;
+
+    span {
+      color: #C99E71;
+      font-family: "Urbanist";
+      font-weight: 500;
+    }
+  }
+
+  &__date {
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-family: "Righteous";
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  &__more {
+    color: #C99E71;
+    font-family: "Urbanist";
+    line-height: 1.2;
+    position: relative;
+
+    &::after {
+      content: url(../img/more_arrow.svg);
+      position: absolute;
+      top: -1px;
+    }
+  }
+}

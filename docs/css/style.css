@@ -824,6 +824,79 @@ button {
   width: 100%;
 }
 
+.news {
+  padding-bottom: 140px;
+}
+
+.news__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news__inner {
+  padding: 20px 24px 24px 24px;
+  background-color: #1C1814;
+}
+
+.news__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.news__author {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.news__author span {
+  color: #C99E71;
+  font-family: "Urbanist";
+  font-weight: 500;
+}
+
+.news__date {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.news__text {
+  font-family: "Righteous";
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.news__more {
+  color: #C99E71;
+  font-family: "Urbanist";
+  line-height: 1.2;
+  position: relative;
+}
+
+.news__more::after {
+  content: url(../img/more_arrow.svg);
+  position: absolute;
+  top: -1px;
+}
+
 @media (max-width: 992px) {
   .header__nav {
     font-size: 16px;
